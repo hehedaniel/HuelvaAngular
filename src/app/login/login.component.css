@@ -1,0 +1,26 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+}
+
+.formularioLogin{
+  width: 100%;
+  max-width: 300px;
+  text-align: center;
+  padding-bottom: 8%;
+}
+
+.tamanio{
+  width: 80%;
+}
+
+.btn {
+  height:45px;
+}
+
+form img{
+  width: 30%;
+  padding-bottom: 4%;
+}

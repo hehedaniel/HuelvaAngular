@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+  <span routerLink="/inicio" class="enlace">Huelva</span>
+  <span class="example-spacer"></span>
+  <span class="example-spacer"></span>
+  <button *ngIf="isAdmin" mat-button routerLink="users" routerLink="adminplaces">Administración de lugares</button>
+  <button *ngIf="getLoggedFirstName()" mat-flat-button color="accent" class="menuButton" (click)="logout()">Salir ({{ firstname }})</button>
+  <button *ngIf="!getLoggedFirstName()" mat-flat-button color="accent" class="menuButton" routerLink="login">Login</button>
+  <button *ngIf="!getLoggedFirstName()" mat-flat-button color="accent" class="menuButton" routerLink="registrar">Registrar</button>
+</mat-toolbar>

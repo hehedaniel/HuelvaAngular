@@ -1,0 +1,162 @@
+<div class="homePage">
+  <h1>{{ place.name}}</h1>
+</div>
+
+<mat-grid-list cols="5" rowHeight="170px">
+
+  <mat-grid-tile (click)="cambiarImgCental(place.imageUrl2[0], place.imageUrl2[1])">
+    <img src="{{ place.imageUrl2[0] }}" alt="Imagen 2" id="{{ place.imageUrl2[1] }}">
+  </mat-grid-tile>
+
+  <mat-grid-tile [colspan]="3" [rowspan]="4">
+    <img src="{{ place.imageUrl[0] }}" alt="Imagen 1" id="imgCentral">
+  </mat-grid-tile>
+
+  <mat-grid-tile (click)="cambiarImgCental(place.imageUrl3[0], place.imageUrl3[1])">
+    <img src="{{ place.imageUrl3[0] }}" alt="Imagen 3" id="{{ place.imageUrl3[1] }}">
+  </mat-grid-tile>
+  <mat-grid-tile (click)="cambiarImgCental(place.imageUrl4[0], place.imageUrl4[1])">
+    <img src="{{ place.imageUrl4[0] }}" alt="Imagen 4" id="{{ place.imageUrl4[1] }}">
+  </mat-grid-tile>
+  <mat-grid-tile (click)="cambiarImgCental(place.imageUrl5[0], place.imageUrl5[1])">
+    <img src="{{ place.imageUrl5[0] }}" alt="Imagen 5" id="{{ place.imageUrl5[1] }}">
+  </mat-grid-tile>
+
+  <mat-grid-tile (click)="cambiarImgCental(place.imageUrl6[0], place.imageUrl6[1])">
+    <img src="{{ place.imageUrl6[0] }}" alt="Imagen 6" id="{{ place.imageUrl6[1] }}">
+  </mat-grid-tile>
+  <mat-grid-tile (click)="cambiarImgCental(place.imageUrl7[0], place.imageUrl7[1])">
+    <img src="{{ place.imageUrl7[0] }}" alt="Imagen 7" id="{{ place.imageUrl7[1] }}">
+  </mat-grid-tile>
+  <mat-grid-tile (click)="cambiarImgCental(place.imageUrl8[0], place.imageUrl8[1])">
+    <img src="{{ place.imageUrl8[0] }}" alt="Imagen 8" id="{{ place.imageUrl8[1] }}">
+  </mat-grid-tile>
+  <mat-grid-tile (click)="cambiarImgCental(place.imageUrl9[0], place.imageUrl9[1])">
+    <img src="{{ place.imageUrl9[0] }}" alt="Imagen 9" id="{{ place.imageUrl9[1] }}">
+  </mat-grid-tile>
+
+</mat-grid-list>
+
+<!-- Informacion -->
+<div class="parrafos">
+  <h2>{{ place.description}}</h2>
+
+  <h3>{{ place.parrafo1}}</h3>
+
+  <h3>{{ place.parrafo2}}</h3>
+</div>
+
+<!-- Puntuacion del sitio -->
+
+<div class="commentsRatingDiv">
+  <ng-container *ngIf="place.rating.length > 0; else nvRating">
+    <div class="ratingDiv">
+      <h3 class="bold"> Valoración: </h3>
+      <h3 class="bold"> {{ calcularMedia(place.rating) }} </h3>
+      <mat-icon style="color: yellow;">star</mat-icon>
+    </div>
+  </ng-container>
+  <ng-template #nvRating>
+    <div class="ratingDiv">
+      <h3 class="bold"> Valoración: </h3>
+      <h3 class="bold"> NV </h3>
+      <mat-icon style="color: grey;">star</mat-icon>
+    </div>
+  </ng-template>
+
+  <hr>
+
+  <div id="comments">
+    <h3 class="bold">Comentarios</h3>
+    <div *ngIf="place.comments && place.comments.length > 0; else noComments">
+      <div *ngIf="loggedIn == true && !place.commentUser.includes(loggedUserId); else lastComment">
+        <div *ngFor="let comment of place.comments" class="comment">
+          <div class="commentRating">
+            <p> {{ place.rating[place.comments.indexOf(comment)] }} </p>
+          </div>
+          <p> {{ comment }} </p>
+          <br>
+        </div>
+
+        <form [formGroup]="formCommentRating" class="commentForm" (submit)="submitformCommentRating()">
+          <mat-form-field>
+            <mat-label>Valoración</mat-label>
+            <mat-select formControlName="rating">
+              <mat-option *ngFor="let rating of possibleRating" [value]="rating">
+                {{ rating }}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="formCommentRating.get('rating')?.hasError('required')">
+              Debe indicar una valoración válida
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Escriba su opinión</mat-label>
+            <input matInput placeholder="Opinión" formControlName="comment">
+            <mat-error *ngIf="formCommentRating.get('id')?.hasError('required')">
+              Debe escribir su opinión
+            </mat-error>
+          </mat-form-field>
+
+          <mat-dialog-actions>
+            <button mat-stroked-button cdkFocusInitial color="primary" type="submit"
+              [disabled]="formCommentRating.invalid">Enviar valoración</button>
+          </mat-dialog-actions>
+        </form>
+
+      </div>
+      <ng-template #lastComment>
+        <div *ngFor="let comment of place.comments">
+          <div *ngIf="place.commentUser[place.comments.indexOf(comment)] == loggedUserId; else notMyComments"
+            class="comment">
+            <div class="commentRating">
+            {{ place.rating[place.commentUser.indexOf(loggedUserId)] }}
+            </div>
+            {{ place.comments[place.commentUser.indexOf(loggedUserId)] }}
+          </div>
+
+          <ng-template #notMyComments>
+            <div class="commentRating">
+              {{ place.rating[place.comments.indexOf(comment)] }}
+            </div>
+            {{ comment }}
+          </ng-template>
+        </div>
+
+      </ng-template>
+    </div>
+    <ng-template #noComments>
+      <p>No hay comentarios disponibles.</p>
+
+      <div *ngIf="loggedIn == true && !place.commentUser.includes(loggedUserId);">
+        <form [formGroup]="formCommentRating" class="commentForm" (submit)="submitformCommentRating()">
+          <mat-form-field>
+            <mat-label>Valoración</mat-label>
+            <mat-select formControlName="rating">
+              <mat-option *ngFor="let rating of possibleRating" [value]="rating">
+                {{ rating }}
+              </mat-option>
+            </mat-select>
+            <mat-error *ngIf="formCommentRating.get('rating')?.hasError('required')">
+              Debe indicar una valoración válida
+            </mat-error>
+          </mat-form-field>
+
+          <mat-form-field>
+            <mat-label>Escriba su opinión</mat-label>
+            <input matInput placeholder="Opinión" formControlName="comment">
+            <mat-error *ngIf="formCommentRating.get('id')?.hasError('required')">
+              Debe escribir su opinión
+            </mat-error>
+          </mat-form-field>
+
+          <mat-dialog-actions>
+            <button mat-stroked-button cdkFocusInitial color="primary" type="submit"
+              [disabled]="formCommentRating.invalid">Enviar valoración</button>
+          </mat-dialog-actions>
+        </form>
+      </div>
+    </ng-template>
+  </div>
+</div>

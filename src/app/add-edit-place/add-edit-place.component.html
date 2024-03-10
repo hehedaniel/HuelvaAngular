@@ -1,0 +1,194 @@
+<div class="registro">
+  <div class="row">
+    <h1>Introducir los datos del sitio</h1>
+  </div>
+
+  <form [formGroup]="formPlace" (ngSubmit)="createPlace()">
+    <div class="row">
+      <mat-form-field class="example-form-field" appearance="outline">
+        <mat-label>ID</mat-label>
+        <input matInput type="text" formControlName="id">
+        <mat-error *ngIf="formPlace.get('id')?.hasError('required')">
+          Debe indicar el id
+        </mat-error>
+      </mat-form-field>
+
+      <span class="example-spacer"></span>
+
+      <mat-form-field class="example-form-field" appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput type="text" formControlName="name">
+        <mat-error *ngIf="formPlace.get('name')?.hasError('required')">
+          Debe indicar un nombre
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>Descripcion breve</mat-label>
+        <input matInput type="text" formControlName="description">
+        <mat-error *ngIf="formPlace.get('description')?.hasError('required')">
+          Debe indicar una descripcion
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>Parrafo 1</mat-label>
+        <input matInput type="text" formControlName="parrafo1">
+        <mat-error *ngIf="formPlace.get('parrafo1')?.hasError('required')">
+          Debe indicar una descripcion
+        </mat-error>
+      </mat-form-field>
+      <span class="example-spacer"></span>
+      <mat-form-field class="example-full-width">
+        <mat-label>Parrafo 2</mat-label>
+        <input matInput type="text" formControlName="parrafo2">
+        <mat-error *ngIf="formPlace.get('parrafo2')?.hasError('required')">
+          Debe indicar una descripcion
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>Parrafo 2</mat-label>
+        <input matInput type="text" formControlName="parrafo2">
+        <mat-error *ngIf="formPlace.get('parrafo2')?.hasError('required')">
+          Debe indicar una descripcion
+        </mat-error>
+      </mat-form-field>
+    </div> -->
+
+    <!-- Div URL imagen principal -->
+    <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>URL de imagen</mat-label>
+        <input matInput type="text" formControlName="imgUrl">
+        <mat-error *ngIf="formPlace.get('imgUrl')?.hasError('required')">
+          Debe indicar una URL
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>URL de imagen</mat-label>
+        <input matInput type="text" formControlName="imgUrl2">
+        <mat-error *ngIf="formPlace.get('imgUrl2')?.hasError('required')">
+          Debe indicar una URL
+        </mat-error>
+      </mat-form-field>
+      <span class="example-spacer"></span>
+      <mat-form-field class="example-full-width">
+        <mat-label>URL de imagen</mat-label>
+        <input matInput type="text" formControlName="imgUrl3">
+        <mat-error *ngIf="formPlace.get('imgUrl3')?.hasError('required')">
+          Debe indicar una URL
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>URL de imagen</mat-label>
+        <input matInput type="text" formControlName="imgUrl3">
+        <mat-error *ngIf="formPlace.get('imgUrl3')?.hasError('required')">
+          Debe indicar una URL
+        </mat-error>
+      </mat-form-field>
+    </div> -->
+
+    <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>URL de imagen</mat-label>
+        <input matInput type="text" formControlName="imgUrl4">
+        <mat-error *ngIf="formPlace.get('imgUrl4')?.hasError('required')">
+          Debe indicar una URL
+        </mat-error>
+      </mat-form-field>
+      <span class="example-spacer"></span>
+      <mat-form-field class="example-full-width">
+        <mat-label>URL de imagen</mat-label>
+        <input matInput type="text" formControlName="imgUrl5">
+        <mat-error *ngIf="formPlace.get('imgUrl5')?.hasError('required')">
+          Debe indicar una URL
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>URL de imagen</mat-label>
+        <input matInput type="text" formControlName="imgUrl5">
+        <mat-error *ngIf="formPlace.get('imgUrl5')?.hasError('required')">
+          Debe indicar una URL
+        </mat-error>
+      </mat-form-field>
+    </div> -->
+
+    <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>URL de imagen</mat-label>
+        <input matInput type="text" formControlName="imgUrl6">
+        <mat-error *ngIf="formPlace.get('imgUrl6')?.hasError('required')">
+          Debe indicar una URL
+        </mat-error>
+      </mat-form-field>
+      <span class="example-spacer"></span>
+      <mat-form-field class="example-full-width">
+        <mat-label>URL de imagen</mat-label>
+        <input matInput type="text" formControlName="imgUrl7">
+        <mat-error *ngIf="formPlace.get('imgUrl7')?.hasError('required')">
+          Debe indicar una URL
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>URL de imagen</mat-label>
+        <input matInput type="text" formControlName="imgUrl7">
+        <mat-error *ngIf="formPlace.get('imgUrl7')?.hasError('required')">
+          Debe indicar una URL
+        </mat-error>
+      </mat-form-field>
+    </div> -->
+
+    <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>URL de imagen</mat-label>
+        <input matInput type="text" formControlName="imgUrl8">
+        <mat-error *ngIf="formPlace.get('imgUrl8')?.hasError('required')">
+          Debe indicar una URL
+        </mat-error>
+      </mat-form-field>
+      <span class="example-spacer"></span>
+      <mat-form-field class="example-full-width">
+        <mat-label>URL de imagen</mat-label>
+        <input matInput type="text" formControlName="imgUrl9">
+        <mat-error *ngIf="formPlace.get('imgUrl9')?.hasError('required')">
+          Debe indicar una URL
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <!-- <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>URL de imagen</mat-label>
+        <input matInput type="text" formControlName="imgUrl9">
+        <mat-error *ngIf="formPlace.get('imgUrl9')?.hasError('required')">
+          Debe indicar una URL
+        </mat-error>
+      </mat-form-field>
+    </div> -->
+
+    <div class="divBtns">
+      <button mat-button mat-dialog-close routerLink="inicio">Cancelar</button>
+      <button mat-flat-button mat-dialog-close color="primary" [disabled]="formPlace.invalid"
+        type="submit">Confirmar</button>
+    </div>
+  </form>
+</div>

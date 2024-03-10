@@ -1,0 +1,20 @@
+<div class="login">
+  <div class="formularioLogin">
+
+
+    <form [formGroup]="form" (ngSubmit)="login()">
+      <img src="../assets/imgs/ayuntamiento-de-huelva.png">
+      <h1>Iniciar sesión</h1><br>
+      <mat-form-field class="tamanio">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput formControlName="email">
+      </mat-form-field>
+      <mat-form-field class="tamanio">
+        <mat-label>Contraseña</mat-label>
+        <input type="password" matInput formControlName="password">
+      </mat-form-field>
+
+      <button type="submit" mat-raised-button color="primary" class="tamanio btn" [disabled]="form.invalid">Entrar</button>
+    </form>
+  </div>
+</div>

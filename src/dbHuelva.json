@@ -1,0 +1,485 @@
+{
+  "sitios": [
+    {
+      "id": "donana",
+      "name": "Parque Nacional de Doñana",
+      "description": "El Parque Nacional de Doñana, declarado en 1969, es uno de los espacios protegidos más importantes del territorio andaluz y la mayor reserva ecológica de Europa. Con 54.251 hectáreas de extensión, está situado en el suroeste de la comunidad autónoma, en las provincias de Huelva y Sevilla.",
+      "parrafo1": "Los ecosistemas acuáticos y terrestres le confieren unas características específicas para albergar una biodiversidad única, destacando algunas especies tan emblemáticas como el lince ibérico y el águila imperial, ambas en peligro de extinción. La marisma es lugar de paso, cría e invernada para miles de aves europeas y africanas, lo que la convierte en un ecosistema de altísimo valor ecológico.",
+      "parrafo2": "Horario: De 16 de septiembre a 31 de marzo: de 8:00h a 15:00h y de 16:00h a 19:00h. Abril: de 8:00h a 15:00h. Desde el 1 de mayo al 15 de septiembre: de 8:00 a 15:00h y 16:00h a 21:00h. Los domingos del 16 de junio al 15 de septiembre todos los servicios, a excepción de los senderos, terminan a las 15:00h.",
+      "imageUrl": [
+        "../assets/imgs/donana0.jpg",
+        "img1"
+      ],
+      "imageUrl2": [
+        "../assets/imgs/donana1.jpg",
+        "img2"
+      ],
+      "imageUrl3": [
+        "../assets/imgs/donana2.jpg",
+        "img3"
+      ],
+      "imageUrl4": [
+        "../assets/imgs/donana3.jpg",
+        "img4"
+      ],
+      "imageUrl5": [
+        "../assets/imgs/donana4.jpg",
+        "img5"
+      ],
+      "imageUrl6": [
+        "../assets/imgs/donana5.jpg",
+        "img6"
+      ],
+      "imageUrl7": [
+        "../assets/imgs/donana6.jpg",
+        "img7"
+      ],
+      "imageUrl8": [
+        "../assets/imgs/donana7.jpg",
+        "img8"
+      ],
+      "imageUrl9": [
+        "../assets/imgs/donana8.jpg",
+        "img9"
+      ],
+      "rating": [
+        "3",
+        "4"
+      ],
+      "comments": [
+        "Bonito",
+        "fff"
+      ],
+      "commentUser": [
+        "a33d",
+        "51db"
+      ]
+    },
+    {
+      "id": "riotinto",
+      "name": "Mina de Riotinto",
+      "description": "Embárcate en un viaje a través del tiempo en la Mina de Riotinto. Este sitio histórico es más que una antigua mina; es un testimonio de la riqueza geológica de la Cuenca Minera, revelando siglos de actividad minera y la fusión de historia industrial con patrimonio natural.",
+      "parrafo1": "Explora galerías subterráneas que revelan el legado de la extracción de minerales, desde cobre hasta pirita. El museo adjunto ofrece una visión detallada de las técnicas mineras y la influencia de la minería en la región.",
+      "parrafo2": "La Mina de Riotinto es un fascinante viaje al pasado, donde la historia de la minería se entrelaza con la diversidad geológica. Descubre la huella que dejó la extracción de minerales en este enclave que combina educación y exploración.",
+      "imageUrl": [
+        "../assets/imgs/riotinto0.jpg",
+        "img1"
+      ],
+      "imageUrl2": [
+        "../assets/imgs/riotinto1.jpg",
+        "img2"
+      ],
+      "imageUrl3": [
+        "../assets/imgs/riotinto2.jpg",
+        "img3"
+      ],
+      "imageUrl4": [
+        "../assets/imgs/riotinto3.jpg",
+        "img4"
+      ],
+      "imageUrl5": [
+        "../assets/imgs/riotinto4.jpg",
+        "img5"
+      ],
+      "imageUrl6": [
+        "../assets/imgs/riotinto5.jpg",
+        "img6"
+      ],
+      "imageUrl7": [
+        "../assets/imgs/riotinto6.jpg",
+        "img7"
+      ],
+      "imageUrl8": [
+        "../assets/imgs/riotinto7.jpg",
+        "img8"
+      ],
+      "imageUrl9": [
+        "../assets/imgs/riotinto8.jpg",
+        "img9"
+      ],
+      "rating": [
+        "5"
+      ],
+      "comments": [
+        "fff"
+      ],
+      "commentUser": [
+        "51db"
+      ]
+    },
+    {
+      "id": "rabida",
+      "name": "La Rábida",
+      "description": "Descubre el aura de misterio y exploración en el Monasterio de La Rábida, donde Cristóbal Colón planificó su trascendental viaje a América. Explora los jardines históricos y la arquitectura que evoca la Edad de Descubrimientos.",
+      "parrafo1": "El Monasterio de La Rábida, ubicado en la provincia de Huelva, desempeñó un papel crucial en la planificación del primer viaje de Cristóbal Colón hacia América. Su arquitectura mudéjar y gótica crea una atmósfera única, mientras que los jardines ofrecen vistas panorámicas del río Tinto y la ciudad de Palos de la Frontera.",
+      "parrafo2": "Horario: De Martes a Domingo de 10:00 a 18:00. Cerrado: Lunes, 24, 25 y 31 de Diciembre, 1, 5 y 6 de Enero",
+      "imageUrl": [
+        "../assets/imgs/rabida0.jpg",
+        "img1"
+      ],
+      "imageUrl2": [
+        "../assets/imgs/rabida1.jpg",
+        "img2"
+      ],
+      "imageUrl3": [
+        "../assets/imgs/rabida2.jpg",
+        "img3"
+      ],
+      "imageUrl4": [
+        "../assets/imgs/rabida3.jpg",
+        "img4"
+      ],
+      "imageUrl5": [
+        "../assets/imgs/rabida4.jpg",
+        "img5"
+      ],
+      "imageUrl6": [
+        "../assets/imgs/rabida5.jpg",
+        "img6"
+      ],
+      "imageUrl7": [
+        "../assets/imgs/rabida6.jpg",
+        "img7"
+      ],
+      "imageUrl8": [
+        "../assets/imgs/rabida7.jpg",
+        "img8"
+      ],
+      "imageUrl9": [
+        "../assets/imgs/rabida8.jpg",
+        "img9"
+      ],
+      "rating": [],
+      "comments": [],
+      "commentUser": [
+        "a33d"
+      ]
+    },
+    {
+      "id": "huelva_playas",
+      "name": "Playas de Huelva",
+      "description": "Sumérgete en el paraíso costero de Huelva con playas de ensueño. Desde las extensas orillas de Punta Umbría hasta las olas cristalinas de Islantilla, cada rincón de la costa ofrece una experiencia única de sol, mar y arena fina.",
+      "parrafo1": "Las playas de Huelva se extienden a lo largo de la costa atlántica, ofreciendo un refugio tranquilo y hermoso. Punta Umbría es conocida por sus dunas y su animado ambiente, mientras que Islantilla combina playas vírgenes con modernas instalaciones turísticas.",
+      "parrafo2": "Disfruta de actividades acuáticas, paseos en la playa o simplemente relájate bajo el sol andaluz. La variada oferta de playas en Huelva satisface los gustos de los visitantes que buscan desde tranquilidad hasta emoción.",
+      "imageUrl": [
+        "../assets/imgs/huelva_playas0.jpg",
+        "img1"
+      ],
+      "imageUrl2": [
+        "../assets/imgs/huelva_playas1.jpg",
+        "img2"
+      ],
+      "imageUrl3": [
+        "../assets/imgs/huelva_playas2.jpg",
+        "img3"
+      ],
+      "imageUrl4": [
+        "../assets/imgs/huelva_playas3.jpg",
+        "img4"
+      ],
+      "imageUrl5": [
+        "../assets/imgs/huelva_playas4.jpg",
+        "img5"
+      ],
+      "imageUrl6": [
+        "../assets/imgs/huelva_playas5.jpg",
+        "img6"
+      ],
+      "imageUrl7": [
+        "../assets/imgs/huelva_playas6.jpg",
+        "img7"
+      ],
+      "imageUrl8": [
+        "../assets/imgs/huelva_playas7.jpg",
+        "img8"
+      ],
+      "imageUrl9": [
+        "../assets/imgs/huelva_playas8.jpg",
+        "img9"
+      ],
+      "rating": [],
+      "comments": [],
+      "commentUser": [
+        "a33d"
+      ]
+    },
+    {
+      "id": "palos_frontera",
+      "name": "Palos de la Frontera",
+      "description": "Viaja al pasado en Palos de la Frontera, tierra de valientes navegantes. Explora la arquitectura histórica que testifica la conexión de esta ciudad con los hermanos Pinzón, héroes olvidados del descubrimiento de América.",
+      "parrafo1": "Palos de la Frontera es un tesoro histórico que marcó el inicio de la era de los descubrimientos. Como cuna de los hermanos Pinzón, navegantes valientes que acompañaron a Colón, la ciudad cuenta con calles empedradas y edificios que respiran historia.",
+      "parrafo2": "Visita la Casa Museo de Martín Alonso Pinzón para explorar la vida y hazañas de estos intrépidos marineros. La Iglesia de San Jorge y la Fontanilla son otros puntos de interés que transportan a los visitantes a la época de los grandes viajes.",
+      "imageUrl": [
+        "../assets/imgs/palos_frontera0.jpg",
+        "img1"
+      ],
+      "imageUrl2": [
+        "../assets/imgs/palos_frontera1.jpg",
+        "img2"
+      ],
+      "imageUrl3": [
+        "../assets/imgs/palos_frontera2.jpg",
+        "img3"
+      ],
+      "imageUrl4": [
+        "../assets/imgs/palos_frontera3.jpg",
+        "img4"
+      ],
+      "imageUrl5": [
+        "../assets/imgs/palos_frontera4.jpg",
+        "img5"
+      ],
+      "imageUrl6": [
+        "../assets/imgs/palos_frontera5.jpg",
+        "img6"
+      ],
+      "imageUrl7": [
+        "../assets/imgs/palos_frontera6.jpg",
+        "img7"
+      ],
+      "imageUrl8": [
+        "../assets/imgs/palos_frontera7.jpg",
+        "img8"
+      ],
+      "imageUrl9": [
+        "../assets/imgs/palos_frontera8.jpg",
+        "img9"
+      ],
+      "rating": [],
+      "comments": [],
+      "commentUser": [
+        "a33d"
+      ]
+    },
+    {
+      "id": "el_rocio",
+      "name": "El Rocío",
+      "description": "Sumérgete en la atmósfera única de El Rocío, donde las calles de arena te llevan a una experiencia espiritual. Esta pequeña aldea es famosa por su romería, pero también ofrece un vistazo encantador a la arquitectura tradicional y a la vida cotidiana.",
+      "parrafo1": "El Rocío, situado en el Parque Nacional de Doñana, es conocido por su romería anual que atrae a miles de peregrinos. Sin embargo, fuera de la festividad, el pueblo ofrece una tranquilidad única. Sus calles de arena, casas blancas y la Ermita de Nuestra Señora del Rocío crean una atmósfera espiritual y pintoresca.",
+      "parrafo2": "Explora la belleza natural circundante, que incluye las marismas de Doñana y la cercana playa de Matalascañas. La aldea, que parece detenida en el tiempo, proporciona un escape sereno del bullicio de la vida moderna.",
+      "imageUrl": [
+        "../assets/imgs/el_rocio0.jpg",
+        "img1"
+      ],
+      "imageUrl2": [
+        "../assets/imgs/el_rocio1.jpg",
+        "img2"
+      ],
+      "imageUrl3": [
+        "../assets/imgs/el_rocio2.jpg",
+        "img3"
+      ],
+      "imageUrl4": [
+        "../assets/imgs/el_rocio3.jpg",
+        "img4"
+      ],
+      "imageUrl5": [
+        "../assets/imgs/el_rocio4.jpg",
+        "img5"
+      ],
+      "imageUrl6": [
+        "../assets/imgs/el_rocio5.jpg",
+        "img6"
+      ],
+      "imageUrl7": [
+        "../assets/imgs/el_rocio6.jpg",
+        "img7"
+      ],
+      "imageUrl8": [
+        "../assets/imgs/el_rocio7.jpg",
+        "img8"
+      ],
+      "imageUrl9": [
+        "../assets/imgs/el_rocio8.jpg",
+        "img9"
+      ],
+      "rating": [],
+      "comments": [],
+      "commentUser": [
+        "a33d"
+      ]
+    },
+    {
+      "id": "isla_cristina",
+      "name": "Isla Cristina",
+      "description": "Descubre Isla Cristina, un paraíso en la costa con su puerto pintoresco y playas de arena dorada. Deléitate con la pesca fresca, explora su rica cultura gastronómica...",
+      "parrafo1": "Isla Cristina, bañada por las aguas del Atlántico y del río Carreras, es un rincón paradisíaco en la costa de Huelva. Su puerto pesquero, con barcos coloridos y la actividad diaria de los pescadores, le otorga un encanto pintoresco.",
+      "parrafo2": "Las playas, como Central y Punta del Caimán, son ideales para relajarse bajo el sol o disfrutar de deportes acuáticos. La rica tradición pesquera se refleja en la gastronomía local, donde podrás saborear delicias frescas del mar en los restaurantes del puerto.",
+      "imageUrl": [
+        "../assets/imgs/isla_cristina0.jpg",
+        "img1"
+      ],
+      "imageUrl2": [
+        "../assets/imgs/isla_cristina1.jpg",
+        "img2"
+      ],
+      "imageUrl3": [
+        "../assets/imgs/isla_cristina2.jpg",
+        "img3"
+      ],
+      "imageUrl4": [
+        "../assets/imgs/isla_cristina3.jpg",
+        "img4"
+      ],
+      "imageUrl5": [
+        "../assets/imgs/isla_cristina4.jpg",
+        "img5"
+      ],
+      "imageUrl6": [
+        "../assets/imgs/isla_cristina5.jpg",
+        "img6"
+      ],
+      "imageUrl7": [
+        "../assets/imgs/isla_cristina6.jpg",
+        "img7"
+      ],
+      "imageUrl8": [
+        "../assets/imgs/isla_cristina7.jpg",
+        "img8"
+      ],
+      "imageUrl9": [
+        "../assets/imgs/isla_cristina8.jpg",
+        "img9"
+      ],
+      "rating": [],
+      "comments": [],
+      "commentUser": [
+        "a33d"
+      ]
+    },
+    {
+      "id": "santa_clara",
+      "name": "Monasterio de Santa Clara",
+      "description": "Adéntrate en la serenidad del Monasterio de Santa Clara, fundado en el siglo XIV. Su arquitectura gótica y su claustro emanan una atmósfera de paz, ofreciendo un escape de la bulliciosa vida urbana.",
+      "parrafo1": "El Monasterio de Santa Clara, fundado en el siglo XIV, es un oasis de serenidad en el corazón de Huelva. Su arquitectura gótica y su claustro emanan una atmósfera de paz, ofreciendo un escape de la bulliciosa vida urbana.",
+      "parrafo2": "Dentro del monasterio, el Museo de la Semana Santa alberga una impresionante colección de arte sacro y objetos religiosos. La visita proporciona una comprensión profunda de las tradiciones y celebraciones religiosas en la región.",
+      "imageUrl": [
+        "../assets/imgs/santa_clara0.jpg",
+        "img1"
+      ],
+      "imageUrl2": [
+        "../assets/imgs/santa_clara1.jpg",
+        "img2"
+      ],
+      "imageUrl3": [
+        "../assets/imgs/santa_clara2.jpg",
+        "img3"
+      ],
+      "imageUrl4": [
+        "../assets/imgs/santa_clara3.jpg",
+        "img4"
+      ],
+      "imageUrl5": [
+        "../assets/imgs/santa_clara4.jpg",
+        "img5"
+      ],
+      "imageUrl6": [
+        "../assets/imgs/santa_clara5.jpg",
+        "img6"
+      ],
+      "imageUrl7": [
+        "../assets/imgs/santa_clara6.jpg",
+        "img7"
+      ],
+      "imageUrl8": [
+        "../assets/imgs/santa_clara7.jpg",
+        "img8"
+      ],
+      "imageUrl9": [
+        "../assets/imgs/santa_clara8.jpg",
+        "img9"
+      ],
+      "rating": [],
+      "comments": [],
+      "commentUser": [
+        "a33d"
+      ]
+    },
+    {
+      "id": "puerto_huelva",
+      "name": "Puerto de Huelva",
+      "description": "Siente la energía del Puerto de Huelva, una puerta histórica al mundo. Desde sus muelles activos hasta la arquitectura que narra épicas expediciones...",
+      "parrafo1": "El Puerto de Huelva, con sus siglos de historia, es un punto de conexión vital entre la ciudad y el mundo. Sus muelles, que han sido testigos de innumerables expediciones y comercio, son una ventana al pasado marítimo de la región.",
+      "parrafo2": "Pasea por los muelles, donde el bullicio del comercio se mezcla con la brisa marina. La arquitectura portuaria, con almacenes históricos y grúas antiguas, cuenta la historia de la importancia de Huelva como puerto estratégico a lo largo de los años.",
+      "imageUrl": [
+        "../assets/imgs/puerto_huelva0.jpg",
+        "img1"
+      ],
+      "imageUrl2": [
+        "../assets/imgs/puerto_huelva1.jpg",
+        "img2"
+      ],
+      "imageUrl3": [
+        "../assets/imgs/puerto_huelva2.jpg",
+        "img3"
+      ],
+      "imageUrl4": [
+        "../assets/imgs/puerto_huelva3.jpg",
+        "img4"
+      ],
+      "imageUrl5": [
+        "../assets/imgs/puerto_huelva4.jpg",
+        "img5"
+      ],
+      "imageUrl6": [
+        "../assets/imgs/puerto_huelva5.jpg",
+        "img6"
+      ],
+      "imageUrl7": [
+        "../assets/imgs/puerto_huelva6.jpg",
+        "img7"
+      ],
+      "imageUrl8": [
+        "../assets/imgs/puerto_huelva7.jpg",
+        "img8"
+      ],
+      "imageUrl9": [
+        "../assets/imgs/puerto_huelva8.jpg",
+        "img9"
+      ],
+      "rating": [],
+      "comments": [],
+      "commentUser": [
+        "a33d"
+      ]
+    }
+  ],
+  "users": [
+    {
+      "id": "a31d",
+      "firstName": "Daniel Martin",
+      "lastName": "Hermoso Hermoso",
+      "comunidad": "Andalucía",
+      "email": "dani@dani.com",
+      "role": "administrador",
+      "birthday": "2002-05-24",
+      "gender": "masculino",
+      "phone": "666",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImEzMWQiLCJmaXJzdE5hbWUiOiJEYW5pZWwgTWFydGluIiwibGFzdE5hbWUiOiJIZXJtb3NvIEhlcm1vc28iLCJjb211bmlkYWQiOiJBbmRhbHVjw61hIiwiZW1haWwiOiJkYW5pQGRhbmkuY29tIiwicm9sZSI6ImFkbWluaXN0cmFkb3IiLCJiaXJ0aGRheSI6IjIwMDItMDUtMjQiLCJnZW5kZXIiOiJob21icmUiLCJwaG9uZSI6IjY2NiIsInBhc3N3b3JkIjoiZGFuaSJ9.M7C-fH5QKkV5HN4sZH6kfX8v-ipLJAG-PR5Osbi4rHs"
+    },
+    {
+      "id": "a33d",
+      "firstName": "Martin Daniel",
+      "lastName": "Hermoso Hermoso",
+      "comunidad": "Andalucía",
+      "email": "martin@martin.com",
+      "role": "usuario",
+      "birthday": "2024-05-02",
+      "gender": "masculino",
+      "phone": "666",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImEzM2QiLCJmaXJzdE5hbWUiOiJNYXJ0aW4gRGFuaWVsIiwibGFzdE5hbWUiOiJIZXJtb3NvIEhlcm1vc28iLCJjb211bmlkYWQiOiJBbmRhbHVjw61hIiwiZW1haWwiOiJtYXJ0aW5AbWFydGluLmNvbSIsInJvbGUiOiJ1c3VhcmlvIiwiYmlydGhkYXkiOiIyMDI0LTA1LTAyIiwiZ2VuZGVyIjoiaG9tYnJlIiwicGhvbmUiOiI2NjYiLCJwYXNzd29yZCI6ImRhbmkifQ.dtWb_U_Mala62Qb4aPXdPcXHe0sSeAVGjJ2HGSCDfr8"
+    },
+    {
+      "id": "51db",
+      "firstName": "prueba",
+      "lastName": "prueba",
+      "comunidad": "Andalucía",
+      "email": "prueba@prueba.com",
+      "role": "usuario",
+      "birthday": "2024-03-06",
+      "gender": "otro",
+      "phone": "999",
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjUxZGIiLCJmaXJzdE5hbWUiOiJwcnVlYmEiLCJsYXN0TmFtZSI6InBydWViYSIsImNvbXVuaWRhZCI6IkFuZGFsdWPDrWEiLCJlbWFpbCI6InBydWViYUBwcnVlYmEuY29tIiwicm9sZSI6InVzdWFyaW8iLCJiaXJ0aGRheSI6IjIwMjQtMDMtMDYiLCJnZW5kZXIiOiJvdHJvIiwicGhvbmUiOiI5OTkiLCJwYXNzd29yZCI6InBydWViYSJ9.7jhIEe_chLIWt57mNomvkwMuonU5YFIAuz57egB6u2I"
+    }
+  ]
+}

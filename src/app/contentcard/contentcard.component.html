@@ -1,0 +1,54 @@
+<body>
+
+  <div class="homePage">
+    <h2>Huelva</h2>
+    <p>
+      Huelva es una ciudad y municipio español, capital de la provincia homónima, situada en la comunidad autónoma de
+      Andalucía. La urbe se encuentra en la confluencia de los ríos Tinto y Odiel, en la llamada Ría de Huelva. Según
+      datos del INE poseía a 1 de enero de 2022 una población de 141 854 habitantes, y algo más de 240 000 incluyendo su
+      área metropolitana según el POTA. Es capital de provincia desde 1833, con rango de ciudad desde 1876.
+    </p>
+  </div>
+  <mat-grid-list cols="3" rowHeight="630px">
+    <div *ngFor="let place of places" class="cartasInicio">
+      <mat-grid-tile>
+        <mat-card class="divCard">
+          <mat-card-header>
+            <mat-card-title>{{place.name}}</mat-card-title>
+          </mat-card-header>
+          <img mat-card-image src="{{ place.imageUrl[0] }}" alt="{{ place.name }}">
+          <mat-card-content>
+            <h3>{{ descripcionMostrar(place.description) }}</h3>
+          </mat-card-content>
+          <div class="cardEnd">
+            <mat-card-actions>
+              <button mat-button color="primary" [routerLink]="'/sitio/' + place.id">Leer más</button>
+            </mat-card-actions>
+            <mat-card-content>
+              <ng-container *ngIf="place.rating.length > 0; else noRating">
+                <div class="rating">
+                  <mat-icon style="color: yellow">
+                    star
+                  </mat-icon>
+                  <p>{{ calcularMedia(place.rating) }}</p>
+                </div>
+              </ng-container>
+              <ng-template #noRating>
+                <div class="rating">
+                  <mat-icon style="color: grey">
+                    star
+                  </mat-icon>
+                  <p>NV</p>
+                </div>
+              </ng-template>
+            </mat-card-content>
+          </div>
+        </mat-card>
+      </mat-grid-tile>
+    </div>
+  </mat-grid-list>
+
+  <div class="homePage btnPdf">
+    <button mat-flat-button color="accent" (click)="descargarPDF()">Descargar PDF</button>
+  </div>
+</body>

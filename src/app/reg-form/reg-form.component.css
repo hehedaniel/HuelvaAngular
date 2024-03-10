@@ -1,0 +1,31 @@
+.registro{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4%;
+}
+
+.form{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1%;
+}
+
+mat-form-field{
+  width: 49%;
+}
+
+.divBtns{
+  margin-top: 8%;
+  display: flex;
+  justify-content: space-between;
+}

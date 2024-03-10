@@ -1,0 +1,23 @@
+#mainBody{
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#mainBody mat-form-field{
+    width: 100%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+
+  mat-form-field{
+    max-width: 51%;
+  }
+}
+
+.button-container mat-icon{
+  margin-right: -3px !important;
+}

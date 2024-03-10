@@ -1,0 +1,89 @@
+<div class="registro">
+  <h1>Registrar Usuario</h1>
+  <form [formGroup]="formRegister" (submit)="register()">
+    <div class="row">
+      <mat-form-field class="example-form-field" appearance="outline">
+        <mat-label>Nombre</mat-label>
+        <input matInput type="text" formControlName="firstName">
+        <mat-error *ngIf="formRegister.get('firstName')?.hasError('required')">
+          Debe indicar su nombre
+        </mat-error>
+      </mat-form-field>
+      <mat-form-field class="example-form-field" appearance="outline">
+        <mat-label>Apellido</mat-label>
+        <input matInput type="text" formControlName="lastName">
+        <mat-error *ngIf="formRegister.get('lastName')?.hasError('required')">
+          Debe indicar su apellido
+        </mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input type="email" matInput placeholder="Ex. pat@example.com" formControlName="email">
+        <mat-error
+          *ngIf="formRegister.get('email')?.hasError('email') && !formRegister.get('email')?.hasError('required')">
+          Por favor, introduzca un correo válido
+        </mat-error>
+      </mat-form-field>
+
+      <mat-form-field appearance="outline">
+        <mat-label>Seleccionar Provincia</mat-label>
+        <mat-select formControlName="comunidad">
+          <mat-option *ngFor="let comSel of comunidades_list" [value]="comSel">
+            {{comSel}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field class="example-form-field" appearance="outline">
+        <mat-label>Contraseña</mat-label>
+        <input matInput type="password" formControlName="password">
+        <mat-icon>password</mat-icon>
+      </mat-form-field>
+      <mat-form-field class="example-form-field" appearance="outline">
+        <mat-label>Repetir contraseña</mat-label>
+        <input matInput type="password" formControlName="passwordRepeat">
+        <mat-icon>password</mat-icon>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-form-field>
+        <mat-label>Custom calendar header</mat-label>
+        <input matInput [matDatepicker]="picker" formControlName="birthday">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field class="example-full-width">
+        <mat-label>Telephone</mat-label>
+        <span matPrefix>+34 &nbsp;</span>
+        <input type="tel" matInput placeholder="987-654-321" formControlName="phone">
+        <mat-icon matSuffix>call</mat-icon>
+      </mat-form-field>
+    </div>
+
+    <div class="row">
+      <mat-label>Elige tu genero</mat-label>
+      <mat-radio-group aria-labelledby="Elige tu genero" class="example-radio-group" formControlName="gender">
+        <mat-radio-button class="example-radio-button" value="femenino">Femenino
+        </mat-radio-button>
+        <mat-radio-button class="example-radio-button" value="masculino">Masculino
+        </mat-radio-button>
+        <mat-radio-button class="example-radio-button" value="otro">Otro
+        </mat-radio-button>
+      </mat-radio-group>
+    </div>
+
+    <div class="divBtns">
+      <button mat-button routerLink="inicio">Cancelar</button>
+      <button mat-flat-button color="primary" [disabled]="formRegister.invalid"
+        type="submit">Registrar</button>
+    </div>
+  </form>
+</div>

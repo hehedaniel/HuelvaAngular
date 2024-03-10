@@ -1,0 +1,21 @@
+.registro{
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row{
+  display: flex;
+  flex-direction: row;
+}
+
+.example-spacer{
+  width: 30px;
+}
+
+.divBtns{
+  display: flex;
+  justify-content: space-between;
+}
