@@ -37,7 +37,6 @@
 
 </mat-grid-list>
 
-<!-- Informacion -->
 <div class="parrafos">
   <h2>{{ place.description}}</h2>
 
@@ -45,8 +44,6 @@
 
   <h3>{{ place.parrafo2}}</h3>
 </div>
-
-<!-- Puntuacion del sitio -->
 
 <div class="commentsRatingDiv">
   <ng-container *ngIf="place.rating.length > 0; else nvRating">

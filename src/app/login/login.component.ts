@@ -26,7 +26,6 @@ export class LoginComponent {
 
     let email: string = this.form.value.email;
     let password: string = this.form.value.password;
-    // console.log(this.form.value.user)); Depuracion
 
     this._loginService.loginUser(email, password).subscribe({
       next: (result: { role: string, token: string } | {}) => {

@@ -94,7 +94,6 @@ export class RegFormComponent {
 
       console.log(this.correosCheck);
 
-      //Decirselo a jsoeca
       let existsEmail = this.correosCheck.length > 0 ? true: false;
 
       console.log(existsEmail);
